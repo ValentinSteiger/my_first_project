@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+
+    The computer generated number is: {{ player.toguess }} <br>
+    Your guess is: {{ player.guess }} <br>
+    The difference is: {{ diff }} <br>
+    Your payoff is: {{ Constants.maxguess }} - {{ diff }} = {{ player.payoff }} <br>
+
+    {% next_button %}
+
+{% endblock %}

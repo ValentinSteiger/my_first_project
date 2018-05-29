@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+{% block content %}
+
+
+    You have an endowment of {{ Constants.endowment }} points. <br>
+    The computer will generate a number from {{ Constants.minguess }} to {{ Constants.maxguess }}. <br>
+    You have to guess this number. <br>
+    The closer the guess the more you will earn.
+
+    {% next_button %}
+
+{% endblock %}
